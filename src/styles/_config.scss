@@ -1,0 +1,52 @@
+//Colors
+$primaryColor: #457b9d;
+$secondaryColor: #a8dadc;
+$accentColor: #e63946;
+$darkColor: #1d3557;
+$greyColor: #596166;
+$lightColor: #eef7fa;
+
+//Font-Family
+$notoSans: "Noto Sans JP", sans-serif;
+$poppins: "Poppins", sans-serif;
+
+// Media queries
+$xxl: 1400px;
+$xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$sm: 576px;
+
+@mixin breakpoint($point) {
+ @if $point == sm {
+  @media (min-width: 576px) {
+   @content;
+  }
+ }
+ @if $point == md {
+  @media (min-width: 768px) {
+   @content;
+  }
+ }
+ @if $point == lg {
+  @media (min-width: 992px) {
+   @content;
+  }
+ }
+ @if $point == xl {
+  @media (min-width: 1200px) {
+   @content;
+  }
+ }
+ @if $point == xxl {
+  @media (min-width: 1400px) {
+   @content;
+  }
+ }
+}
+
+@mixin clampmd-lg {
+ @media (min-width: 550px) and (max-width: 1200px) {
+  @content;
+ }
+}

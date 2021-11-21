@@ -1,0 +1,47 @@
+@import "./config";
+
+.btn {
+ background-color: transparent;
+ border: 1px solid $darkColor;
+ border-radius: 0.2rem;
+ color: $darkColor;
+ font-size: 1.5rem;
+ letter-spacing: 0.1rem;
+ font-weight: 400;
+ width: 14.5rem;
+ height: 3.85rem;
+}
+
+.btn--accent {
+ background-color: $accentColor;
+ color: #fff;
+ border: none;
+}
+
+.btn--small {
+ width: 11.75rem;
+ height: 3rem;
+ font-size: 1.35rem; //22px
+}
+
+.skills__card {
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 1.5rem 0;
+ gap: 1rem;
+ background-color: $lightColor;
+ border: 1px solid $secondaryColor;
+ border-radius: 0.2rem;
+ position: relative;
+ width: 11.35rem; //182px
+ h5 {
+  position: absolute;
+  right: 0;
+  top: -1rem;
+ }
+ img {
+  width: 40%;
+ }
+}

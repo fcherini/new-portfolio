@@ -1,0 +1,14 @@
+@import "./config";
+
+.socials {
+ display: none;
+ @include breakpoint(lg) {
+  position: fixed;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  height: 268px;
+  bottom: 0;
+  right: 3vw;
+ }
+}

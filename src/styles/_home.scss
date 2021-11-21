@@ -1,0 +1,112 @@
+@import "./config";
+
+#home {
+ display: flex;
+ flex-direction: column;
+ gap: 5rem;
+ margin: auto;
+ width: 100vw;
+
+ @include breakpoint(md) {
+  padding-top: 7vh;
+ }
+ @include breakpoint(lg) {
+  padding-top: 10vh;
+ }
+ @include breakpoint(xl) {
+  flex-direction: row;
+  padding-top: 10vh;
+  margin: auto;
+  width: 80vw;
+ }
+}
+
+.home__info {
+ margin: auto;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ gap: 3rem;
+ @include breakpoint(md) {
+  width: 80%;
+ }
+
+ &--detail {
+  display: block;
+  margin-top: 3vh;
+  @include breakpoint(md) {
+   display: inline;
+   margin-top: 0;
+  }
+ }
+
+ h6 {
+  @include breakpoint(md) {
+   width: 80%;
+  }
+ }
+
+ .btn__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 4rem;
+  @include breakpoint(md) {
+   flex-direction: row;
+   margin-top: 2rem;
+  }
+ }
+}
+
+.skills__wrapper {
+ margin: auto;
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ gap: 3rem;
+ height: auto;
+
+ @include breakpoint(md) {
+  gap: 5vw;
+  flex-direction: row;
+ }
+
+ @include breakpoint(xxl) {
+  margin-top: 3vh;
+  height: 649px;
+  width: 28rem;
+
+  .card__design {
+   position: absolute;
+   top: 0;
+   right: 0;
+  }
+
+  .card__frontend {
+   position: absolute;
+   top: 220px;
+   left: 0;
+   z-index: 1;
+  }
+
+  .card__others {
+   position: absolute;
+   top: 400px;
+   right: 0;
+  }
+ }
+
+ @include clampmd-lg {
+  width: auto;
+  display: flex;
+  gap: 5vw;
+  height: auto;
+  .card__design,
+  .card__frontend,
+  .card__others {
+   position: relative;
+   top: 0;
+  }
+ }
+}
