@@ -1,0 +1,77 @@
+.portfolio__section {
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ margin: auto;
+ height: 100vh;
+
+ @include breakpoint(lg) {
+  flex-direction: row;
+  width: 90%;
+ }
+}
+
+.portfolio__info {
+ width: 90%;
+}
+
+.portfolio__links {
+ padding: 2rem 0;
+ display: flex;
+ gap: 25vw;
+ margin: auto;
+ @include breakpoint(lg) {
+  flex-direction: column;
+  margin-left: 0;
+  gap: 0.25rem;
+ }
+}
+
+li a {
+ color: $accentColor;
+ text-transform: uppercase;
+ font-weight: 900;
+}
+
+.portfolio__imgs {
+ position: relative;
+ width: 90%;
+ margin: auto;
+ margin-top: 5rem;
+
+ #trouble1 {
+  position: absolute;
+  width: 45%;
+  top: 0;
+  right: 0;
+ }
+ #trouble2 {
+  position: absolute;
+  width: 45%;
+  top: 100px;
+  z-index: 1;
+ }
+ #trouble3 {
+  position: absolute;
+  width: 45%;
+  top: 500px;
+  right: 30px;
+  z-index: 2;
+ }
+ #trouble4 {
+  position: absolute;
+  top: 370px;
+  width: 90%;
+ }
+
+ @include breakpoint(md) {
+  #trouble1,
+  #trouble2,
+  #trouble3 {
+   width: 30%;
+  }
+  #trouble4 {
+   width: 70%;
+  }
+ }
+}
