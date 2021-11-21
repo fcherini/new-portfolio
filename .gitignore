@@ -2,3 +2,5 @@
 /.cache
 .cache
 .DS_Store
+/.parcel-cache
+.parcel-cache
