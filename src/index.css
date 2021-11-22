@@ -191,6 +191,10 @@ nav {
   color: #457b9d;
 }
 
+.nav__links--active {
+  color: #1d3557;
+}
+
 @media (min-width: 992px) {
   .nav__links {
     display: inline-block;

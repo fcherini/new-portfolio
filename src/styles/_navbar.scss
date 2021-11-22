@@ -18,9 +18,6 @@ nav {
  }
 }
 
-.nav--active {
-}
-
 .nav__icon {
  fill: $primaryColor;
  @include breakpoint(lg) {
@@ -35,6 +32,9 @@ nav {
 .nav__links {
  display: none;
  color: $primaryColor;
+ &--active {
+  color: $darkColor;
+ }
  @include breakpoint(lg) {
   display: inline-block;
  }
