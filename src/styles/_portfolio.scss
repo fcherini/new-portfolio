@@ -2,8 +2,8 @@
  display: flex;
  flex-direction: column;
  width: 100%;
+
  margin: auto;
- height: 100vh;
 
  @include breakpoint(lg) {
   flex-direction: row;
@@ -13,15 +13,18 @@
 
 .portfolio__info {
  width: 90%;
+ @include breakpoint(lg) {
+  width: 50%;
+ }
 }
 
 .portfolio__links {
  padding: 2rem 0;
  display: flex;
- gap: 25vw;
+ flex-direction: column;
+ gap: 5vw;
  margin: auto;
  @include breakpoint(lg) {
-  flex-direction: column;
   margin-left: 0;
   gap: 0.25rem;
  }
@@ -34,44 +37,79 @@ li a {
 }
 
 .portfolio__imgs {
+ display: block;
  position: relative;
  width: 90%;
+ height: 90vh;
  margin: auto;
- margin-top: 5rem;
+ margin-top: 3vh;
+
+ img {
+  position: absolute;
+  width: 45%;
+ }
 
  #trouble1 {
-  position: absolute;
-  width: 45%;
   top: 0;
   right: 0;
+  z-index: 3;
  }
  #trouble2 {
-  position: absolute;
-  width: 45%;
-  top: 100px;
+  top: 80px;
   z-index: 1;
  }
  #trouble3 {
-  position: absolute;
-  width: 45%;
-  top: 500px;
-  right: 30px;
+  top: 450px;
+  right: 50px;
   z-index: 2;
  }
  #trouble4 {
-  position: absolute;
-  top: 370px;
-  width: 90%;
+  top: 320px;
+  left: 0;
+  width: 100%;
+ }
+ #freshii1 {
+  width: 100%;
+  top: 300px;
+ }
+ #freshii2 {
+  width: 48%;
+  z-index: 1;
+ }
+ #freshii3 {
+  width: 48%;
+  right: 0;
+  top: 100px;
+  z-index: 2;
  }
 
  @include breakpoint(md) {
-  #trouble1,
-  #trouble2,
+  margin-top: 0;
+
+  img {
+   width: 23%;
+  }
+
+  #trouble1 {
+   right: 250px;
+  }
+  #trouble2 {
+   top: 250px;
+   left: -80px;
+  }
   #trouble3 {
-   width: 30%;
+   right: 0;
+   top: 350px;
   }
   #trouble4 {
-   width: 70%;
+   width: 100%;
+   top: 250px;
+  }
+  #freshii2 {
+   right: 350px;
+  }
+  #freshii1 {
+   width: 80%;
   }
  }
 }
