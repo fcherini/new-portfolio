@@ -6,6 +6,7 @@
  gap: 5rem;
  margin: auto;
  width: 100vw;
+ height: max-content;
 
  @include breakpoint(md) {
   padding-top: 7vh;
@@ -14,10 +15,12 @@
   padding-top: 10vh;
  }
  @include breakpoint(xl) {
+  height: 100vh;
   flex-direction: row;
   padding-top: 10vh;
   margin: auto;
   width: 80vw;
+  scroll-snap-align: start;
  }
 }
 
@@ -72,18 +75,18 @@
   flex-direction: row;
  }
 
- @include breakpoint(xxl) {
+ @include breakpoint(xl) {
   margin-top: 3vh;
   height: 649px;
   width: 28rem;
 
-  .card__design {
+  .card__frontend {
    position: absolute;
    top: 0;
    right: 0;
   }
 
-  .card__frontend {
+  .card__design {
    position: absolute;
    top: 220px;
    left: 0;

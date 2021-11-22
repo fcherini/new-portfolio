@@ -11,6 +11,15 @@ body {
   background-color: #eef7fa;
 }
 
+@media (min-width: 1200px) {
+  .container {
+    overflow-y: scroll;
+    -ms-scroll-snap-type: y mandatory;
+        scroll-snap-type: y mandatory;
+    height: 100vh;
+  }
+}
+
 section {
   padding: 3rem 1.5rem;
 }
@@ -76,18 +85,25 @@ h6 {
   background-color: transparent;
   border: 1px solid #1d3557;
   border-radius: 0.2rem;
-  color: #1d3557;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
   font-weight: 400;
   width: 14.5rem;
   height: 3.85rem;
+  cursor: pointer;
+}
+
+.btn a {
+  color: #1d3557;
 }
 
 .btn--accent {
   background-color: #e63946;
-  color: #fff;
   border: none;
+}
+
+.btn--accent a {
+  color: #fff;
 }
 
 .btn--small {
@@ -213,6 +229,9 @@ nav {
   gap: 5rem;
   margin: auto;
   width: 100vw;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 @media (min-width: 768px) {
@@ -229,6 +248,7 @@ nav {
 
 @media (min-width: 1200px) {
   #home {
+    height: 100vh;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -236,6 +256,7 @@ nav {
     padding-top: 10vh;
     margin: auto;
     width: 80vw;
+    scroll-snap-align: start;
   }
 }
 
@@ -325,18 +346,18 @@ nav {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .skills__wrapper {
     margin-top: 3vh;
     height: 649px;
     width: 28rem;
   }
-  .skills__wrapper .card__design {
+  .skills__wrapper .card__frontend {
     position: absolute;
     top: 0;
     right: 0;
   }
-  .skills__wrapper .card__frontend {
+  .skills__wrapper .card__design {
     position: absolute;
     top: 220px;
     left: 0;
@@ -378,8 +399,9 @@ nav {
   margin: auto;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .portfolio__section {
+    margin-bottom: 8vh;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -388,21 +410,32 @@ nav {
   }
 }
 
+@media (min-width: 1200px) {
+  .portfolio__section {
+    margin-bottom: 0;
+    scroll-snap-align: start;
+    height: 100vh;
+  }
+}
+
 .portfolio__info {
   width: 90%;
 }
 
-@media (min-width: 992px) {
+.portfolio__info h6 {
+  margin-bottom: 4vh;
+}
+
+@media (min-width: 768px) {
   .portfolio__info {
+    margin-top: 5rem;
     width: 50%;
   }
 }
 
 .portfolio__links {
   padding: 2rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -411,7 +444,7 @@ nav {
   margin: auto;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .portfolio__links {
     margin-left: 0;
     gap: 0.25rem;
@@ -481,30 +514,52 @@ li a {
 @media (min-width: 768px) {
   .portfolio__imgs {
     margin-top: 0;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
   }
   .portfolio__imgs img {
     width: 23%;
   }
   .portfolio__imgs #trouble1 {
-    right: 250px;
+    right: 30%;
+    top: 200px;
   }
   .portfolio__imgs #trouble2 {
-    top: 250px;
-    left: -80px;
+    top: 350px;
+    left: -10%;
   }
   .portfolio__imgs #trouble3 {
     right: 0;
-    top: 350px;
+    top: 400px;
   }
   .portfolio__imgs #trouble4 {
     width: 100%;
-    top: 250px;
+    bottom: 0px;
+  }
+  .portfolio__imgs #freshii3 {
+    width: 25%;
+    top: 300px;
+    right: 5%;
   }
   .portfolio__imgs #freshii2 {
-    right: 350px;
+    right: 30%;
+    width: 25%;
+    top: 200px;
   }
   .portfolio__imgs #freshii1 {
-    width: 80%;
+    width: 65%;
+    left: -8%;
+    top: 350px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .portfolio__imgs #trouble1 {
+    top: 100px;
+  }
+  .portfolio__imgs #freshii2 {
+    top: 150px;
   }
 }
 
@@ -519,6 +574,15 @@ body {
   color: #596166;
   font-family: "Poppins", sans-serif;
   background-color: #eef7fa;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    overflow-y: scroll;
+    -ms-scroll-snap-type: y mandatory;
+        scroll-snap-type: y mandatory;
+    height: 100vh;
+  }
 }
 
 section {
@@ -584,19 +648,34 @@ h6 {
 
 #formacao {
   width: 100vw;
-  height: 100vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   overflow: hidden;
 }
 
+@media (min-width: 768px) {
+  #formacao {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  #formacao {
+    height: 100vh;
+    scroll-snap-align: start;
+  }
+}
+
 .qualification__content {
-  height: 90vh;
-  width: 80vw;
+  width: 90vw;
   margin: auto;
+  margin-top: 5vh;
 }
 
 @media (min-width: 768px) {
   .qualification__content {
-    margin-top: -4vh;
     width: 50vw;
   }
 }
@@ -653,5 +732,352 @@ h6 {
 
 .qualification__circle--active {
   background: #e63946;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: #596166;
+  font-family: "Poppins", sans-serif;
+  background-color: #eef7fa;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    overflow-y: scroll;
+    -ms-scroll-snap-type: y mandatory;
+        scroll-snap-type: y mandatory;
+    height: 100vh;
+  }
+}
+
+section {
+  padding: 3rem 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #1d3557;
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+
+h4 {
+  color: #457b9d;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 5%;
+  text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+  h4 {
+    font-size: 2.25rem;
+  }
+}
+
+h5 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1d3557;
+}
+
+h6 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid #1d3557;
+  border-radius: 0.2rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  width: 14.5rem;
+  height: 3.85rem;
+  cursor: pointer;
+}
+
+.btn a {
+  color: #1d3557;
+}
+
+.btn--accent {
+  background-color: #e63946;
+  border: none;
+}
+
+.btn--accent a {
+  color: #fff;
+}
+
+.btn--small {
+  width: 11.75rem;
+  height: 3rem;
+  font-size: 1.35rem;
+}
+
+.skills__card {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 0;
+  gap: 1rem;
+  background-color: #eef7fa;
+  border: 1px solid #a8dadc;
+  border-radius: 0.2rem;
+  position: relative;
+  width: 11.35rem;
+}
+
+.skills__card h5 {
+  position: absolute;
+  right: 0;
+  top: -1rem;
+}
+
+.skills__card img {
+  width: 40%;
+}
+
+#contato {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 100vw;
+}
+
+@media (min-width: 768px) {
+  #contato {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  #contato {
+    height: 100vh;
+    scroll-snap-align: start;
+  }
+}
+
+#contato #submit__message {
+  text-align: center;
+  margin-top: -50px;
+  margin-bottom: 50px;
+  color: #1d3557;
+  -webkit-animation: all 4s ease forwards;
+          animation: all 4s ease forwards;
+}
+
+#contato .contact__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5vh;
+}
+
+@media (min-width: 1200px) {
+  #contato .contact__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 70vw;
+    margin: auto;
+    margin-top: 1vh;
+  }
+}
+
+#contato form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80vw;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  #contato form {
+    width: 65vw;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  #contato form {
+    width: 40%;
+  }
+}
+
+#contato #name,
+#contato #email,
+#contato #message,
+#contato .contact__card {
+  border-radius: 4px;
+  border: 1px solid #a8dadc;
+  padding: 0.5rem;
+  background-color: transparent;
+}
+
+#contato #message {
+  height: 15vh;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  #contato #message {
+    height: 20vh;
+  }
+}
+
+#contato label {
+  color: #596166;
+  margin-top: 1rem;
+}
+
+#contato .contact__info {
+  width: 80vw;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  #contato .contact__info {
+    width: 50vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  #contato .contact__info {
+    width: 35%;
+  }
+}
+
+#contato .contact__card {
+  padding: 2rem;
+  margin: 1.5rem 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contato .contact__card textarea {
+  resize: none;
+  height: 1.25rem;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+}
+
+#contato .contact__text {
+  color: #1d3557;
+  border: none;
+  resize: none;
+  display: block;
+  text-align: center;
+  margin: auto;
+  letter-spacing: 0.2rem;
+  height: 1.5rem;
+  width: 80%;
+}
+
+#contato .contact__link {
+  color: #e63946;
+  font-size: 1.3vh;
+}
+
+#contato .contact__icon {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  font-size: 2rem;
+  color: #457b9d;
+}
+
+#contato .tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+#contato .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 8rem;
+  background-color: #457b9d;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 0.25rem;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+#contato .tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 /*# sourceMappingURL=index.css.map */

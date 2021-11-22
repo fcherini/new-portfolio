@@ -12,6 +12,14 @@ body {
  background-color: $lightColor;
 }
 
+.container {
+ @include breakpoint(xl) {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+ }
+}
+
 section {
  padding: 3rem 1.5rem;
 }

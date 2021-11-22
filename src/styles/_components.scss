@@ -4,18 +4,23 @@
  background-color: transparent;
  border: 1px solid $darkColor;
  border-radius: 0.2rem;
- color: $darkColor;
  font-size: 1.5rem;
  letter-spacing: 0.1rem;
  font-weight: 400;
  width: 14.5rem;
  height: 3.85rem;
+ cursor: pointer;
+ a {
+  color: $darkColor;
+ }
 }
 
 .btn--accent {
  background-color: $accentColor;
- color: #fff;
  border: none;
+ a {
+  color: #fff;
+ }
 }
 
 .btn--small {

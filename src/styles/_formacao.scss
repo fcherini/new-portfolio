@@ -3,17 +3,24 @@
 
 #formacao {
  width: 100vw;
- height: 100vh;
+ height: max-content;
  overflow: hidden;
+ @include breakpoint(md) {
+  width: 90%;
+  margin: auto;
+ }
+ @include breakpoint(xl) {
+  height: 100vh;
+  scroll-snap-align: start;
+ }
 }
 
 .qualification__content {
- height: 90vh;
- width: 80vw;
+ width: 90vw;
  margin: auto;
+ margin-top: 5vh;
 
  @include breakpoint(md) {
-  margin-top: -4vh;
   width: 50vw;
  }
 }

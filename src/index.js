@@ -1,4 +1,5 @@
 import "./scripts/formacao.js";
+import "./scripts/contato.js";
 // import LocomotiveScroll from "locomotive-scroll";
 
 // const scroll = new LocomotiveScroll({
