@@ -10,8 +10,16 @@
  width: 14.5rem;
  height: 3.85rem;
  cursor: pointer;
+ transition: all 0.3s ease-in;
  a {
   color: $darkColor;
+ }
+ &:hover {
+  background-color: $darkColor;
+
+  a {
+   color: white;
+  }
  }
 }
 

@@ -91,10 +91,20 @@ h6 {
   width: 14.5rem;
   height: 3.85rem;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .btn a {
   color: #1d3557;
+}
+
+.btn:hover {
+  background-color: #1d3557;
+}
+
+.btn:hover a {
+  color: white;
 }
 
 .btn--accent {
@@ -174,6 +184,12 @@ nav {
 
 .nav__icon {
   fill: #457b9d;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.nav__icon:hover {
+  fill: #1d3557;
 }
 
 @media (min-width: 992px) {
@@ -189,9 +205,15 @@ nav {
 .nav__links {
   display: none;
   color: #457b9d;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .nav__links--active {
+  color: #1d3557;
+}
+
+.nav__links:hover {
   color: #1d3557;
 }
 
@@ -831,10 +853,20 @@ h6 {
   width: 14.5rem;
   height: 3.85rem;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .btn a {
   color: #1d3557;
+}
+
+.btn:hover {
+  background-color: #1d3557;
+}
+
+.btn:hover a {
+  color: white;
 }
 
 .btn--accent {

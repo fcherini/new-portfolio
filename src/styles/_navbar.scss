@@ -20,6 +20,12 @@ nav {
 
 .nav__icon {
  fill: $primaryColor;
+ transition: all 0.3s ease-in;
+
+ &:hover {
+  fill: $darkColor;
+ }
+
  @include breakpoint(lg) {
   display: none;
  }
@@ -32,7 +38,12 @@ nav {
 .nav__links {
  display: none;
  color: $primaryColor;
+ transition: all 0.3s ease-in;
+
  &--active {
+  color: $darkColor;
+ }
+ &:hover {
   color: $darkColor;
  }
  @include breakpoint(lg) {
