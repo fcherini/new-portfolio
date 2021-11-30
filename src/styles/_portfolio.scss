@@ -1,148 +1,146 @@
 .portfolio__section {
- display: flex;
- flex-direction: column;
- width: 100%;
- margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
 
- @include breakpoint(md) {
-  margin-bottom: 8vh;
-  flex-direction: row;
-  width: 90%;
- }
- @include breakpoint(xl) {
-  margin-bottom: 0;
-  scroll-snap-align: start;
-  height: 100vh;
- }
+    @include breakpoint(md) {
+        margin-bottom: 8vh;
+        flex-direction: row;
+        width: 90%;
+    }
+    @include breakpoint(xl) {
+        margin-bottom: 0;
+        scroll-snap-align: start;
+        height: 100vh;
+    }
 }
 
 .portfolio__info {
- width: 90%;
+    width: 90%;
 
- h6 {
-  margin-bottom: 4vh;
- }
+    h6 {
+        // margin-bottom: 4vh;
+    }
 
- @include breakpoint(md) {
-  margin-top: 5rem;
-  width: 50%;
- }
+    @include breakpoint(md) {
+        margin-top: 5rem;
+        width: 50%;
+    }
 }
 
 .portfolio__links {
- padding: 2rem 0;
- // display: flex;
- display: none;
- flex-direction: column;
- gap: 5vw;
- margin: auto;
- @include breakpoint(md) {
-  margin-left: 0;
-  gap: 0.25rem;
- }
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    margin: auto;
+    @include breakpoint(md) {
+        margin-left: 0;
+        gap: 0.25rem;
+    }
 }
 
 li a {
- color: $accentColor;
- text-transform: uppercase;
- font-weight: 900;
+    color: $accentColor;
+    text-transform: uppercase;
+    font-weight: 900;
 }
 
 .portfolio__imgs {
- display: block;
- position: relative;
- width: 90%;
- height: 90vh;
- margin: auto;
- margin-top: 3vh;
+    display: block;
+    position: relative;
+    width: 90%;
+    height: 90vh;
+    margin: auto;
+    margin-top: 3vh;
 
- img {
-  position: absolute;
-  width: 45%;
- }
+    img {
+        position: absolute;
+        width: 45%;
+    }
 
- #trouble1 {
-  top: 0;
-  right: 0;
-  z-index: 3;
- }
- #trouble2 {
-  top: 80px;
-  z-index: 1;
- }
- #trouble3 {
-  top: 450px;
-  right: 50px;
-  z-index: 2;
- }
- #trouble4 {
-  top: 320px;
-  left: 0;
-  width: 100%;
- }
- #freshii1 {
-  width: 100%;
-  top: 300px;
- }
- #freshii2 {
-  width: 48%;
-  z-index: 1;
- }
- #freshii3 {
-  width: 48%;
-  right: 0;
-  top: 100px;
-  z-index: 2;
- }
+    #trouble1 {
+        top: 0;
+        right: 0;
+        z-index: 3;
+    }
+    #trouble2 {
+        top: 80px;
+        z-index: 1;
+    }
+    #trouble3 {
+        top: 450px;
+        right: 50px;
+        z-index: 2;
+    }
+    #trouble4 {
+        top: 320px;
+        left: 0;
+        width: 100%;
+    }
+    #freshii1 {
+        width: 100%;
+        top: 300px;
+    }
+    #freshii2 {
+        width: 48%;
+        z-index: 1;
+    }
+    #freshii3 {
+        width: 48%;
+        right: 0;
+        top: 100px;
+        z-index: 2;
+    }
 
- @include breakpoint(md) {
-  margin-top: 0;
-  height: max-content;
+    @include breakpoint(md) {
+        margin-top: 0;
+        height: max-content;
 
-  img {
-   width: 23%;
-  }
+        img {
+            width: 23%;
+        }
 
-  #trouble1 {
-   right: 30%;
-   top: 200px;
-  }
-  #trouble2 {
-   top: 350px;
-   left: -10%;
-  }
-  #trouble3 {
-   right: 0;
-   top: 400px;
-  }
-  #trouble4 {
-   width: 100%;
-   bottom: 0px;
-  }
-  #freshii3 {
-   width: 25%;
-   top: 300px;
-   right: 5%;
-  }
-  #freshii2 {
-   right: 30%;
-   width: 25%;
-   top: 200px;
-  }
-  #freshii1 {
-   width: 65%;
-   left: -8%;
-   top: 350px;
-  }
- }
+        #trouble1 {
+            right: 30%;
+            top: 200px;
+        }
+        #trouble2 {
+            top: 350px;
+            left: -10%;
+        }
+        #trouble3 {
+            right: 0;
+            top: 400px;
+        }
+        #trouble4 {
+            width: 100%;
+            bottom: 0px;
+        }
+        #freshii3 {
+            width: 25%;
+            top: 300px;
+            right: 5%;
+        }
+        #freshii2 {
+            right: 30%;
+            width: 25%;
+            top: 200px;
+        }
+        #freshii1 {
+            width: 65%;
+            left: -8%;
+            top: 350px;
+        }
+    }
 
- @include breakpoint(xl) {
-  #trouble1 {
-   top: 100px;
-  }
-  #freshii2{
-      top: 150px;
-
-  }
- }
+    @include breakpoint(xl) {
+        #trouble1 {
+            top: 100px;
+        }
+        #freshii2 {
+            top: 150px;
+        }
+    }
 }
