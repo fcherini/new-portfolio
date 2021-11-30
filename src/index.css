@@ -101,9 +101,19 @@ h6 {
 
 .btn:hover {
   background-color: #1d3557;
+  color: white;
 }
 
 .btn:hover a {
+  color: white;
+}
+
+.btn--active {
+  background-color: #1d3557;
+  color: white;
+}
+
+.btn--active a {
   color: white;
 }
 
@@ -120,6 +130,12 @@ h6 {
   width: 11.75rem;
   height: 3rem;
   font-size: 1.35rem;
+}
+
+.btn--mini {
+  width: 7rem;
+  height: 2rem;
+  font-size: 0.9rem;
 }
 
 .skills__card {
@@ -670,7 +686,7 @@ h6 {
   font-weight: 400;
 }
 
-#formacao {
+#qualificacoes {
   width: 100vw;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -679,17 +695,29 @@ h6 {
 }
 
 @media (min-width: 768px) {
-  #formacao {
+  #qualificacoes {
     width: 90%;
     margin: auto;
   }
 }
 
 @media (min-width: 1200px) {
-  #formacao {
+  #qualificacoes {
     height: 100vh;
     scroll-snap-align: start;
   }
+}
+
+.qualification__btns {
+  margin: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
 }
 
 .qualification__content {
@@ -861,9 +889,19 @@ h6 {
 
 .btn:hover {
   background-color: #1d3557;
+  color: white;
 }
 
 .btn:hover a {
+  color: white;
+}
+
+.btn--active {
+  background-color: #1d3557;
+  color: white;
+}
+
+.btn--active a {
   color: white;
 }
 
@@ -880,6 +918,12 @@ h6 {
   width: 11.75rem;
   height: 3rem;
   font-size: 1.35rem;
+}
+
+.btn--mini {
+  width: 7rem;
+  height: 2rem;
+  font-size: 0.9rem;
 }
 
 .skills__card {

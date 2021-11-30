@@ -1,4 +1,4 @@
-import "./scripts/formacao.js";
+import "./scripts/qualificacoes.js";
 import "./scripts/contato.js";
 import "./scripts/navbar.js";
 // import LocomotiveScroll from "locomotive-scroll";

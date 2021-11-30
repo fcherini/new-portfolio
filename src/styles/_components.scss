@@ -16,10 +16,20 @@
  }
  &:hover {
   background-color: $darkColor;
+  color: white;
 
   a {
    color: white;
   }
+ }
+}
+
+.btn--active {
+ background-color: $darkColor;
+ color: white;
+
+ a {
+  color: white;
  }
 }
 
@@ -35,6 +45,12 @@
  width: 11.75rem;
  height: 3rem;
  font-size: 1.35rem; //22px
+}
+
+.btn--mini {
+ width: 7rem;
+ height: 2rem;
+ font-size: 0.9rem; //22px
 }
 
 .skills__card {
