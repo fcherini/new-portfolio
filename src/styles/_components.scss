@@ -11,16 +11,11 @@
  height: 3.85rem;
  cursor: pointer;
  transition: all 0.3s ease-in;
- a {
-  color: $darkColor;
- }
+ color: $darkColor;
+
  &:hover {
   background-color: $darkColor;
   color: white;
-
-  a {
-   color: white;
-  }
  }
 }
 
@@ -36,8 +31,12 @@
 .btn--accent {
  background-color: $accentColor;
  border: none;
- a {
-  color: #fff;
+ color: #fff;
+
+ &:hover {
+  background-color: transparent;
+  border: 1px solid $accentColor;
+  color: $accentColor;
  }
 }
 

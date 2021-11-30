@@ -93,18 +93,11 @@ h6 {
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
-}
-
-.btn a {
   color: #1d3557;
 }
 
 .btn:hover {
   background-color: #1d3557;
-  color: white;
-}
-
-.btn:hover a {
   color: white;
 }
 
@@ -120,10 +113,13 @@ h6 {
 .btn--accent {
   background-color: #e63946;
   border: none;
+  color: #fff;
 }
 
-.btn--accent a {
-  color: #fff;
+.btn--accent:hover {
+  background-color: transparent;
+  border: 1px solid #e63946;
+  color: #e63946;
 }
 
 .btn--small {
@@ -881,18 +877,11 @@ h6 {
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
-}
-
-.btn a {
   color: #1d3557;
 }
 
 .btn:hover {
   background-color: #1d3557;
-  color: white;
-}
-
-.btn:hover a {
   color: white;
 }
 
@@ -908,10 +897,13 @@ h6 {
 .btn--accent {
   background-color: #e63946;
   border: none;
+  color: #fff;
 }
 
-.btn--accent a {
-  color: #fff;
+.btn--accent:hover {
+  background-color: transparent;
+  border: 1px solid #e63946;
+  color: #e63946;
 }
 
 .btn--small {
