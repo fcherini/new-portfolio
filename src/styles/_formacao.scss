@@ -41,7 +41,7 @@
 }
 
 .qualification__title {
- color: $darkColor;
+ color: $secondaryColor;
  letter-spacing: 0.15rem;
 }
 
@@ -76,5 +76,5 @@
  transform: translate(6px, -7px);
 }
 .qualification__circle--active {
- background: $accentColor;
+ background: $secondaryColor;
 }

@@ -6,9 +6,9 @@
 }
 
 body {
-  color: #596166;
-  font-family: "Poppins", sans-serif;
-  background-color: #eef7fa;
+  color: #777182;
+  font-family: "Fira Sans", sans-serif;
+  background-color: white;
 }
 
 @media (min-width: 1200px) {
@@ -35,7 +35,12 @@ ul {
 h1 {
   font-size: 2.25rem;
   font-weight: 400;
-  color: #1d3557;
+  background: radial-gradient(circle farthest-corner at 10% 20%, #ab66ff 0%, #74b6f7 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 @media (min-width: 992px) {
@@ -55,7 +60,7 @@ h3 {
 }
 
 h4 {
-  color: #457b9d;
+  color: #74b6f4;
   font-family: "Noto Sans JP", sans-serif;
   font-size: 1.5rem;
   font-weight: 300;
@@ -77,13 +82,14 @@ h5 {
 }
 
 h6 {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 400;
 }
 
 .btn {
   background-color: transparent;
-  border: 1px solid #1d3557;
+  border: 1px solid;
+  border-color: radial-gradient(circle farthest-corner at 10% 20%, #ab66ff 0%, #74b6f7 90%);
   border-radius: 0.2rem;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
@@ -93,16 +99,16 @@ h6 {
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
-  color: #1d3557;
+  color: #a472fa;
 }
 
 .btn:hover {
-  background-color: #1d3557;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, #ab66ff 0%, #74b6f7 90%);
   color: white;
 }
 
 .btn--active {
-  background-color: #1d3557;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, #ab66ff 0%, #74b6f7 90%);
   color: white;
 }
 
@@ -111,15 +117,16 @@ h6 {
 }
 
 .btn--accent {
-  background-color: #e63946;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, #ab66ff 0%, #74b6f7 90%);
   border: none;
   color: #fff;
 }
 
 .btn--accent:hover {
-  background-color: transparent;
-  border: 1px solid #e63946;
-  color: #e63946;
+  background: transparent;
+  border: 1px solid;
+  border-color: radial-gradient(circle farthest-corner at 10% 20%, #ab66ff 0%, #74b6f7 90%);
+  color: #a472fa;
 }
 
 .btn--small {
@@ -148,8 +155,9 @@ h6 {
           align-items: center;
   padding: 1.5rem 0;
   gap: 1rem;
-  background-color: #eef7fa;
-  border: 1px solid #a8dadc;
+  background-color: white;
+  border: 1px solid;
+  border-color: #a472fa;
   border-radius: 0.2rem;
   position: relative;
   width: 11.35rem;
@@ -158,7 +166,13 @@ h6 {
 .skills__card h5 {
   position: absolute;
   right: 0;
-  top: -1rem;
+  top: -1.5rem;
+  background: radial-gradient(circle farthest-corner at 10% 20%, #ab66ff 0%, #74b6f7 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .skills__card img {
@@ -190,18 +204,18 @@ nav {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
-    background-color: #eef7fa;
+    background-color: white;
   }
 }
 
 .nav__icon {
-  fill: #457b9d;
+  fill: #a472fa;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
 
 .nav__icon:hover {
-  fill: #1d3557;
+  fill: #74b6f4;
 }
 
 @media (min-width: 992px) {
@@ -211,22 +225,22 @@ nav {
 }
 
 .nav__icon--active {
-  fill: #1d3557;
+  fill: #74b6f4;
 }
 
 .nav__links {
   display: none;
-  color: #457b9d;
+  color: #a472fa;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
 
 .nav__links--active {
-  color: #1d3557;
+  color: #74b6f4;
 }
 
 .nav__links:hover {
-  color: #1d3557;
+  color: #74b6f4;
 }
 
 @media (min-width: 992px) {
@@ -308,7 +322,7 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 @media (min-width: 768px) {
@@ -356,7 +370,7 @@ nav {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin-top: 2rem;
+    margin-top: 0rem;
   }
 }
 
@@ -460,6 +474,10 @@ nav {
   width: 90%;
 }
 
+.portfolio__info h6 {
+  margin-bottom: 4vh;
+}
+
 @media (min-width: 768px) {
   .portfolio__info {
     margin-top: 5rem;
@@ -488,7 +506,7 @@ nav {
 }
 
 li a {
-  color: #e63946;
+  color: radial-gradient(circle farthest-corner at 10% 20%, #ab66ff 0%, #74b6f7 90%);
   text-transform: uppercase;
   font-weight: 900;
 }
@@ -532,34 +550,34 @@ li a {
 
 .portfolio__imgs #freshii1 {
   width: 100%;
-  top: 300px;
+  top: 400px;
 }
 
 .portfolio__imgs #freshii2 {
-  width: 48%;
+  width: 45%;
   z-index: 1;
 }
 
 .portfolio__imgs #freshii3 {
-  width: 48%;
+  width: 45%;
   right: 0;
-  top: 100px;
+  top: 150px;
   z-index: 2;
 }
 
 .portfolio__imgs #eletrica1 {
-  top: 550px;
+  top: 620px;
   left: 0;
   width: 80%;
 }
 
 .portfolio__imgs #eletrica2 {
-  top: 220px;
+  top: 230px;
   z-index: 2;
 }
 
 .portfolio__imgs #eletrica3 {
-  top: 300px;
+  top: 350px;
   right: 0px;
   z-index: 3;
 }
@@ -671,9 +689,9 @@ li a {
 }
 
 body {
-  color: #596166;
-  font-family: "Poppins", sans-serif;
-  background-color: #eef7fa;
+  color: #777182;
+  font-family: "Fira Sans", sans-serif;
+  background-color: white;
 }
 
 @media (min-width: 1200px) {
@@ -700,7 +718,12 @@ ul {
 h1 {
   font-size: 2.25rem;
   font-weight: 400;
-  color: #1d3557;
+  background: radial-gradient(circle farthest-corner at 10% 20%, #ab66ff 0%, #74b6f7 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 @media (min-width: 992px) {
@@ -720,7 +743,7 @@ h3 {
 }
 
 h4 {
-  color: #457b9d;
+  color: #74b6f4;
   font-family: "Noto Sans JP", sans-serif;
   font-size: 1.5rem;
   font-weight: 300;
@@ -742,7 +765,7 @@ h5 {
 }
 
 h6 {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 400;
 }
 
@@ -804,20 +827,20 @@ h6 {
 }
 
 .qualification__title {
-  color: #1d3557;
+  color: #a472fa;
   letter-spacing: 0.15rem;
 }
 
 .qualification__type {
-  color: #e63946;
+  color: radial-gradient(circle farthest-corner at 10% 20%, #ab66ff 0%, #74b6f7 90%);
 }
 
 .qualification__place {
-  color: #596166;
+  color: #777182;
 }
 
 .qualification__year {
-  color: #457b9d;
+  color: #74b6f4;
   letter-spacing: 0.1rem;
 }
 
@@ -825,7 +848,7 @@ h6 {
   display: inline-block;
   width: 13px;
   height: 13px;
-  background: #457b9d;
+  background: #74b6f4;
   border-radius: 50%;
   -webkit-transition: 0.2s all linear;
   transition: 0.2s all linear;
@@ -837,13 +860,13 @@ h6 {
   display: block;
   width: 1px;
   height: 100%;
-  background: #457b9d;
+  background: #74b6f4;
   -webkit-transform: translate(6px, -7px);
           transform: translate(6px, -7px);
 }
 
 .qualification__circle--active {
-  background: #e63946;
+  background: #a472fa;
 }
 
 * {
@@ -854,9 +877,9 @@ h6 {
 }
 
 body {
-  color: #596166;
-  font-family: "Poppins", sans-serif;
-  background-color: #eef7fa;
+  color: #777182;
+  font-family: "Fira Sans", sans-serif;
+  background-color: white;
 }
 
 @media (min-width: 1200px) {
@@ -883,7 +906,12 @@ ul {
 h1 {
   font-size: 2.25rem;
   font-weight: 400;
-  color: #1d3557;
+  background: radial-gradient(circle farthest-corner at 10% 20%, #ab66ff 0%, #74b6f7 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 @media (min-width: 992px) {
@@ -903,7 +931,7 @@ h3 {
 }
 
 h4 {
-  color: #457b9d;
+  color: #74b6f4;
   font-family: "Noto Sans JP", sans-serif;
   font-size: 1.5rem;
   font-weight: 300;
@@ -925,13 +953,14 @@ h5 {
 }
 
 h6 {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 400;
 }
 
 .btn {
   background-color: transparent;
-  border: 1px solid #1d3557;
+  border: 1px solid;
+  border-color: radial-gradient(circle farthest-corner at 10% 20%, #ab66ff 0%, #74b6f7 90%);
   border-radius: 0.2rem;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
@@ -941,16 +970,16 @@ h6 {
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
-  color: #1d3557;
+  color: #a472fa;
 }
 
 .btn:hover {
-  background-color: #1d3557;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, #ab66ff 0%, #74b6f7 90%);
   color: white;
 }
 
 .btn--active {
-  background-color: #1d3557;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, #ab66ff 0%, #74b6f7 90%);
   color: white;
 }
 
@@ -959,15 +988,16 @@ h6 {
 }
 
 .btn--accent {
-  background-color: #e63946;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, #ab66ff 0%, #74b6f7 90%);
   border: none;
   color: #fff;
 }
 
 .btn--accent:hover {
-  background-color: transparent;
-  border: 1px solid #e63946;
-  color: #e63946;
+  background: transparent;
+  border: 1px solid;
+  border-color: radial-gradient(circle farthest-corner at 10% 20%, #ab66ff 0%, #74b6f7 90%);
+  color: #a472fa;
 }
 
 .btn--small {
@@ -996,8 +1026,9 @@ h6 {
           align-items: center;
   padding: 1.5rem 0;
   gap: 1rem;
-  background-color: #eef7fa;
-  border: 1px solid #a8dadc;
+  background-color: white;
+  border: 1px solid;
+  border-color: #a472fa;
   border-radius: 0.2rem;
   position: relative;
   width: 11.35rem;
@@ -1006,7 +1037,13 @@ h6 {
 .skills__card h5 {
   position: absolute;
   right: 0;
-  top: -1rem;
+  top: -1.5rem;
+  background: radial-gradient(circle farthest-corner at 10% 20%, #ab66ff 0%, #74b6f7 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .skills__card img {
@@ -1100,7 +1137,7 @@ h6 {
 #contato #message,
 #contato .contact__card {
   border-radius: 4px;
-  border: 1px solid #a8dadc;
+  border: 1px solid #a472fa;
   padding: 0.5rem;
   background-color: transparent;
 }
@@ -1117,7 +1154,7 @@ h6 {
 }
 
 #contato label {
-  color: #596166;
+  color: #777182;
   margin-top: 1rem;
 }
 
@@ -1160,7 +1197,7 @@ h6 {
   resize: none;
   height: 1.25rem;
   width: 100%;
-  font-family: "Poppins", sans-serif;
+  font-family: "Fira Sans", sans-serif;
   background-color: transparent;
 }
 
@@ -1177,7 +1214,7 @@ h6 {
 }
 
 #contato .contact__link {
-  color: #e63946;
+  color: radial-gradient(circle farthest-corner at 10% 20%, #ab66ff 0%, #74b6f7 90%);
   font-size: 1.3vh;
 }
 
@@ -1186,7 +1223,7 @@ h6 {
   top: -10px;
   left: -10px;
   font-size: 2rem;
-  color: #457b9d;
+  color: #74b6f4;
 }
 
 #contato .tooltip {
@@ -1197,7 +1234,7 @@ h6 {
 #contato .tooltip .tooltiptext {
   visibility: hidden;
   width: 8rem;
-  background-color: #457b9d;
+  background-color: #74b6f4;
   color: #fff;
   text-align: center;
   border-radius: 6px;

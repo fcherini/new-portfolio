@@ -1,14 +1,15 @@
 //Colors
-$primaryColor: #457b9d;
-$secondaryColor: #a8dadc;
-$accentColor: #e63946;
+$primaryColor: #74b6f4;
+$secondaryColor: #a472fa;
+$accentColor: radial-gradient(circle farthest-corner at 10% 20%, rgba(171, 102, 255, 1) 0%, rgba(116, 182, 247, 1) 90%);
 $darkColor: #1d3557;
-$greyColor: #596166;
+$greyColor: #777182;
 $lightColor: #eef7fa;
 
 //Font-Family
 $notoSans: "Noto Sans JP", sans-serif;
-$poppins: "Poppins", sans-serif;
+$fira: "Fira Sans", sans-serif;
+$firaC: "Fira Sans Condensed", sans-serif;
 
 // Media queries
 $xxl: 1400px;

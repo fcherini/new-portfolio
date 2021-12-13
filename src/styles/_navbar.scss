@@ -14,16 +14,16 @@ nav {
  @include breakpoint(lg) {
   top: 0;
   justify-content: end;
-  background-color: $lightColor;
+  background-color: white;
  }
 }
 
 .nav__icon {
- fill: $primaryColor;
+ fill: $secondaryColor;
  transition: all 0.3s ease-in;
 
  &:hover {
-  fill: $darkColor;
+  fill: $primaryColor;
  }
 
  @include breakpoint(lg) {
@@ -31,20 +31,20 @@ nav {
  }
 
  &--active {
-  fill: $darkColor;
+  fill: $primaryColor;
  }
 }
 
 .nav__links {
  display: none;
- color: $primaryColor;
+ color: $secondaryColor;
  transition: all 0.3s ease-in;
 
  &--active {
-  color: $darkColor;
+  color: $primaryColor;
  }
  &:hover {
-  color: $darkColor;
+  color: $primaryColor;
  }
  @include breakpoint(lg) {
   display: inline-block;

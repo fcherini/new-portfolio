@@ -20,7 +20,7 @@
     width: 90%;
 
     h6 {
-        // margin-bottom: 4vh;
+        margin-bottom: 4vh;
     }
 
     @include breakpoint(md) {
@@ -81,29 +81,29 @@ li a {
     }
     #freshii1 {
         width: 100%;
-        top: 300px;
+        top: 400px;
     }
     #freshii2 {
-        width: 48%;
+        width: 45%;
         z-index: 1;
     }
     #freshii3 {
-        width: 48%;
+        width: 45%;
         right: 0;
-        top: 100px;
+        top: 150px;
         z-index: 2;
     }
     #eletrica1 {
-        top: 550px;
+        top: 620px;
         left: 0;
         width: 80%;
     }
     #eletrica2 {
-        top: 220px;
+        top: 230px;
         z-index: 2;
     }
     #eletrica3 {
-        top: 300px;
+        top: 350px;
         right: 0px;
         z-index: 3;
     }

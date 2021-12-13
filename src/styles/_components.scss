@@ -2,7 +2,8 @@
 
 .btn {
  background-color: transparent;
- border: 1px solid $darkColor;
+ border: 1px solid;
+ border-color: $accentColor;
  border-radius: 0.2rem;
  font-size: 1.5rem;
  letter-spacing: 0.1rem;
@@ -11,16 +12,16 @@
  height: 3.85rem;
  cursor: pointer;
  transition: all 0.3s ease-in;
- color: $darkColor;
+ color: $secondaryColor;
 
  &:hover {
-  background-color: $darkColor;
+  background-image: $accentColor;
   color: white;
  }
 }
 
 .btn--active {
- background-color: $darkColor;
+ background-image: $accentColor;
  color: white;
 
  a {
@@ -29,14 +30,15 @@
 }
 
 .btn--accent {
- background-color: $accentColor;
+ background-image: $accentColor;
  border: none;
  color: #fff;
 
  &:hover {
-  background-color: transparent;
-  border: 1px solid $accentColor;
-  color: $accentColor;
+  background: transparent;
+  border: 1px solid;
+  border-color: $accentColor;
+  color: $secondaryColor;
  }
 }
 
@@ -59,15 +61,22 @@
  align-items: center;
  padding: 1.5rem 0;
  gap: 1rem;
- background-color: $lightColor;
- border: 1px solid $secondaryColor;
+ background-color: white;
+ border: 1px solid;
+ border-color: $secondaryColor;
  border-radius: 0.2rem;
  position: relative;
  width: 11.35rem; //182px
  h5 {
   position: absolute;
   right: 0;
-  top: -1rem;
+  top: -1.5rem;
+  background: $accentColor;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
  }
  img {
   width: 40%;

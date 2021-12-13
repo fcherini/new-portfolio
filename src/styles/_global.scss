@@ -8,8 +8,8 @@
 
 body {
  color: $greyColor;
- font-family: $poppins;
- background-color: $lightColor;
+ font-family: $fira;
+ background-color: white;
 }
 
 .container {
@@ -35,7 +35,12 @@ ul {
 h1 {
  font-size: 2.25rem; //36px
  font-weight: 400;
- color: $darkColor;
+ background: $accentColor;
+ background-clip: text;
+ -webkit-background-clip: text;
+ -moz-background-clip: text;
+ -moz-text-fill-color: transparent;
+ -webkit-text-fill-color: transparent;
  @include breakpoint(lg) {
   font-size: 4.5rem; //72px
  }
@@ -74,6 +79,6 @@ h5 {
 
 //Body Large
 h6 {
- font-size: 1.25rem; //20px
+ font-size: 1.15rem; //20px
  font-weight: 400;
 }

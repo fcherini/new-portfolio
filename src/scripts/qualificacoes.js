@@ -14,9 +14,9 @@ formacaoBtn.addEventListener("click", () => {
   qualificationContent.innerHTML = `<!-- qualification content 1 -->
           <div class="qualification__data">
             <div class="qualification__text" id="1">
-              <h5 class="qualification__title" id="1">WEB <br />DESIGNER</h5>
-              <div class="qualification__type" id="1">Curso Técnico MEC</div>
-              <div class="qualification__place" id="1">CPET</div>
+              <h5 class="qualification__title" id="1">DESIGN <br />GRÁFICO</h5>
+              <div class="qualification__type" id="1">Bachalerado</div>
+              <div class="qualification__place" id="1">UNINTER</div>
               <div class="qualification__year" id="1">2021 - Atual</div>
             </div>
             <div>
