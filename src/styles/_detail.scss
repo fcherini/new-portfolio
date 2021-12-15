@@ -1,0 +1,268 @@
+@import "./config";
+
+.detail__background {
+ background-image: $accentColor;
+ width: 100vw;
+ height: 100vh;
+ overflow: scroll;
+}
+
+.detail__container {
+ border-radius: 0.25rem;
+ width: 95vw;
+ margin: auto;
+ margin-top: 2.5vh;
+ overflow: scroll;
+ padding: 3vh 2vh;
+ position: relative;
+ background: white;
+ @include breakpoint(lg) {
+  width: 90vw;
+  margin-top: 8vh;
+  padding: 7vh 15vw;
+ }
+ h3 {
+  color: $secondaryColor;
+  font-family: $firaC;
+  font-weight: 500;
+ }
+}
+
+.close-btn {
+ position: absolute;
+ display: block;
+ top: 0.5rem;
+ right: 1rem;
+ color: $secondaryColor;
+ background: transparent;
+ font-size: 2rem;
+ border: none;
+}
+
+.detail__header {
+ display: flex;
+ flex-direction: column;
+ gap: 1rem;
+ justify-content: center;
+ align-items: center;
+
+ h1,
+ h6 {
+  text-align: center;
+ }
+
+ h1 {
+  font-family: $firaC;
+  font-size: 2rem;
+  font-weight: 600;
+ }
+
+ @include breakpoint(lg) {
+  h6 {
+   width: 40vw;
+  }
+ }
+}
+
+.detail__mockups {
+ display: flex;
+ justify-content: space-between;
+ img {
+  width: 30%;
+  margin-top: 2vh;
+ }
+ @include breakpoint(md) {
+  width: 60vw;
+ }
+}
+
+.detail__btns {
+ display: flex;
+ gap: 5vw;
+ margin: 2rem auto;
+ @include breakpoint(lg) {
+  gap: 3rem;
+ }
+}
+//CONTENT
+.detail__problem {
+ @include breakpoint(lg) {
+  width: 40vw;
+ }
+}
+
+.detail__firststep {
+ display: flex;
+ flex-direction: column;
+ margin-top: 8vh;
+ gap: 3vh;
+
+ @include breakpoint(lg) {
+  gap: 10rem;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+}
+
+.detail__timeline {
+ display: flex;
+ align-items: center;
+ gap: 1rem;
+
+ @include breakpoint(lg) {
+  flex-direction: column;
+ }
+
+ .detail__circle {
+  width: 4rem;
+  height: 4rem;
+ }
+ .detail__line {
+  display: inline-block;
+  height: 1px;
+  width: 100%;
+
+  background-image: $accentColor;
+  @include breakpoint(lg) {
+   width: 1px;
+   height: 100%;
+  }
+ }
+}
+
+.detail__information {
+ flex: 60%;
+ ul {
+  margin-left: 2rem;
+  list-style-type: square;
+  list-style-position: outside;
+  li {
+   padding: 2px 0;
+  }
+ }
+ h5 {
+  font-family: $firaC;
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  color: $primaryColor;
+  font-weight: 300;
+ }
+}
+
+.detail__persona {
+ border: 1px solid $secondaryColor;
+ border-radius: 0.2rem;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 1rem;
+ padding: 1rem;
+
+ @include breakpoint(md) {
+  width: 70%;
+  margin: auto;
+ }
+
+ .persona__photo {
+  width: 3.5rem;
+ }
+ .persona__info {
+  color: $secondaryColor;
+ }
+}
+
+.list {
+ font-size: 1.5rem;
+ padding-right: 0.5rem;
+ font-weight: 300;
+ color: $primaryColor;
+ display: inline;
+}
+
+.wireframe__imgs {
+ display: flex;
+ position: relative;
+ justify-content: space-around;
+ .wireframe__img__one,
+ .wireframe__img__two {
+  position: relative;
+
+  img {
+   width: 100%;
+   border: 1px solid $primaryColor;
+  }
+  width: 40%;
+
+  // @include breakpoint(md) {
+  //  width: 30%;
+  // }
+ }
+}
+
+.comment {
+ position: relative;
+ width: 100%;
+ background: $primaryColor;
+ padding: 0.5rem;
+ color: white;
+ text-align: center;
+ @include breakpoint(md) {
+  width: 80%;
+  position: absolute;
+  left: -3rem;
+ }
+}
+
+.comment--bottom {
+ bottom: 0;
+ @include breakpoint(md) {
+  right: -4rem;
+ }
+}
+
+.comment-one {
+ top: 350px;
+ left: -20px;
+}
+
+.comment-two {
+ bottom: 50px;
+ left: 20px;
+}
+
+.comment-three {
+ top: 60px;
+ left: 20px;
+}
+
+.comment-four {
+ bottom: 15px;
+ left: 20px;
+}
+
+@include breakpoint(md) {
+ .comment-one {
+  top: 500px;
+  left: -100px;
+ }
+
+ .comment-two {
+  bottom: -10px;
+ }
+
+ .comment-three {
+  top: 30px;
+  left: 100px;
+ }
+
+ .comment-four {
+  bottom: -40px;
+  left: 20px;
+ }
+}
+
+.wireframe__mobile__gif {
+ width: 60%;
+ margin: auto;
+}

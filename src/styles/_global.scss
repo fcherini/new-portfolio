@@ -79,6 +79,9 @@ h5 {
 
 //Body Large
 h6 {
- font-size: 1.15rem; //20px
+ font-size: 1rem; //20px
  font-weight: 400;
+ @include breakpoint(md) {
+  font-size: 1.15rem;
+ }
 }

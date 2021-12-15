@@ -1,6 +1,7 @@
 import "./scripts/qualificacoes.js";
 import "./scripts/contato.js";
 import "./scripts/navbar.js";
+import "./scripts/detail.js";
 // import LocomotiveScroll from "locomotive-scroll";
 
 // const scroll = new LocomotiveScroll({
