@@ -12,6 +12,12 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400;500;600&family=Fira+Sans:wght@300;400;500;700&family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <!-- Styles -->
     <link rel="stylesheet" href="./index.css" />
     <title>TROUBLE</title>
@@ -30,25 +36,25 @@
             característica o estilo alternativo e colorido.
           </h6>
           <div class="detail__mockups">
-            <img src="../assets/trouble 2.png" alt="" />
-            <img src="../assets/trouble 3.png" alt="" />
-            <img src="../assets/trouble 4.png" alt="" />
+            <img src="../assets/trouble/trouble 2.png" alt="" />
+            <img src="../assets/trouble/trouble 3.png" alt="" />
+            <img src="../assets/trouble/trouble 4.png" alt="" />
           </div>
-          <div class="detail__btns">
+          <!-- <div class="detail__btns">
             <button class="btn btn--mini btn--accent">ux design</button>
             <button class="btn btn--mini">ui design</button>
-          </div>
+          </div> -->
         </div>
         <!-- Content -->
         <div class="detail__content">
-          <div class="detail__problem">
+          <!-- <div class="detail__problem">
             <h3>O problema</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis.
             </p>
-          </div>
+          </div> -->
           <!-- First Step -->
           <div class="detail__firststep">
             <div class="detail__timeline">
@@ -60,7 +66,7 @@
               <h3>1. Imersão</h3>
               <!-- First Item -->
               <h5>Pesquisa de Usuário</h5>
-              <p>
+              <p class="detail__subtitle">
                 Uma pesquisa secundária foi feita para melhor entender o
                 comportamento dos consumidores.<sup
                   ><a
@@ -100,12 +106,12 @@
               </ul>
               <!-- Second Item -->
               <h5>Necessidades do Usuário</h5>
-              <p>
+              <p class="detail__subtitle">
                 Com base na pesquisa, as principais necessidades do usuáriro
                 foram definidas.
               </p>
 
-              <p></p>
+              <p>
                 <span class="list"><sup>#</sup>1</span> Um site limpo, sem
                 muitos pop-ups e anúncios e que rode bem.
               </p>
@@ -127,30 +133,38 @@
 
               <!-- Second Item -->
               <h5>Personas</h5>
-              <p>
+              <p class="detail__subtitle">
                 Para melhor identificar com o usuário,algumas personas foram
                 criadas
               </p>
-              <div class="detail__persona">
-                <img src="../assets/imersao.svg" class="persona__photo" />
-                <p class="persona__info">Laura, 32</p>
-                <p class="persona__description">
-                  Laura é mãe de duas crianças pequenas e sair com os dois para
-                  fazer compras é inviável. Ela prefere olhar roupas e
-                  acessórios quando tem alguns minutos no celular. Para ela é
-                  importante poder salvar roupas que gosta para olhar e comprar
-                  depois.
-                </p>
-              </div>
-              <div class="detail__persona">
-                <img src="../assets/imersao.svg" class="persona__photo" />
-                <p class="persona__info">Denise, 19</p>
-                <p class="persona__description">
-                  Denise adora fazer compras online e está sempre pesquisando
-                  por marcas novas para conhecer. O maior problema que encontra
-                  é receio de que essas marcas novas não sejam de confiança por
-                  não ter muita informação disponível.
-                </p>
+              <div class="persona__container">
+                <div class="detail__persona">
+                  <img
+                    src="../assets/trouble/trouble-persona-one.png"
+                    class="persona__photo"
+                  />
+                  <p class="persona__info">Laura, 32</p>
+                  <p class="persona__description">
+                    Laura é mãe de duas crianças pequenas e sair com os dois
+                    para fazer compras é inviável. Ela prefere olhar roupas e
+                    acessórios quando tem alguns minutos no celular. Para ela é
+                    importante poder salvar roupas que gosta para olhar e
+                    comprar depois.
+                  </p>
+                </div>
+                <div class="detail__persona">
+                  <img
+                    src="../assets/trouble/trouble-persona-two.png"
+                    class="persona__photo"
+                  />
+                  <p class="persona__info">Denise, 19</p>
+                  <p class="persona__description">
+                    Denise adora fazer compras online e está sempre pesquisando
+                    por marcas novas para conhecer. O maior problema que
+                    encontra é receio de que essas marcas novas não sejam de
+                    confiança por não ter muita informação disponível.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -165,36 +179,147 @@
             <div class="detail__information">
               <h3>2. Ideação</h3>
               <!-- First Item -->
-              <h5>Wireframe</h5>
-              <p>O protótipo de baixa fidelidade foi feito pensando nas necessidades do usuário.</p>
-              <div class="wireframe__imgs">
-                
-                <div class="wireframe__img__two">
-                  <div class="comment comment-one">Seção de descontos na página principal</div>
-                  <img src="../assets/trouble-shop.png" alt="" />
-                  <div class="comment  comment-two comment--bottom">Tag de desconto e ênfase na mudança do preço</div>
+              <h5>Arquitetura da informação</h5>
+              <p class="detail__subtitle">
+                O sitemap foi definido levando em consideração a estrutura de
+                lojas similares e das necessidades do usuário.
+              </p>
+              <img
+                src="../assets/trouble/trouble-sitemap.png"
+                alt="sitemap"
+                class="sitemap"
+              />
 
+              <!-- Second Item -->
+              <h5>Wireframe</h5>
+              <p class="detail__subtitle">
+                O protótipo de baixa fidelidade foi feito pensando nas
+                necessidades do usuário.
+              </p>
+              <div class="wireframe__imgs">
+                <div class="wireframe__img__two">
+                  <div class="comment comment-one">
+                    Seção de descontos na página principal
+                  </div>
+                  <img src="../assets/trouble/trouble-shop.png" alt="" />
+                  <div class="comment comment-two comment--bottom">
+                    Tag de desconto e ênfase na mudança do preço
+                  </div>
                 </div>
                 <div class="wireframe__img__one">
-                  
-                  <div class="comment comment-three">Informação sobre entrega grátis</div>
-                  
+                  <div class="comment comment-three">
+                    Informação sobre entrega grátis
+                  </div>
+
+                  <img src="../assets/trouble/trouble-product.png" alt="" />
+                  <div class="comment comment--bottom comment-four">
+                    Informação de devolução e entrega nas páginas
+                  </div>
+                </div>
+              </div>
+              <img
+                src="../assets/trouble/trouble_wireframe_movie.gif"
+                class="wireframe__mobile__gif"
+              />
+              <!-- Third Item -->
+              <!-- <h5>Testes de Usuário</h5>
+              <p class="detail__subtitle">
+                Após realizar testes com usuários, algumas descobertas foram
+                feitas.
+              </p>
+              <p>
+                <span class="list"><sup>#</sup>1</span> Um site limpo, sem
+                muitos pop-ups e anúncios e que rode bem.
+              </p>
+              <p>
+                <span class="list"><sup>#</sup>2</span> Uma ótima experiência de
+                compra.
+              </p>
+              <p>
+                <span class="list"><sup>#</sup>3</span> Conhecer o tom da marca
+                para desenvolver lealdade.
+              </p>
+              <p>
+                <span class="list"><sup>#</sup>4</span> Descontos e promoções.
+              </p>
+              <p>
+                <span class="list"><sup>#</sup>5</span> Política de entrega,
+                retorno, e estorno clara.
+              </p> -->
+            </div>
+          </div>
+          <!-- End of Second Step -->
+          <!-- Third Step -->
+          <div class="detail__firststep">
+            <div class="detail__timeline">
+              <img src="../assets/definicao.svg" class="detail__circle" />
+
+              <span class="detail__line"></span>
+            </div>
+            <div class="detail__information">
+              <h3>3. Definição</h3>
+              <!-- First Item -->
+              <!-- <h5>Atualizando os Protótipos</h5>
+              <p class="detail__subtitle">
+                Usando os resultados do teste de usuário, algumas alterações
+                foram feitas.
+              </p>
+              <div class="wireframe__imgs">
+                <div class="wireframe__img__two">
+                  <div class="comment comment-one">
+                    Seção de descontos na página principal
+                  </div>
+                  <img src="../assets/trouble-shop.png" alt="" />
+                  <div class="comment comment-two comment--bottom">
+                    Tag de desconto e ênfase na mudança do preço
+                  </div>
+                </div>
+                <div class="wireframe__img__one">
+                  <div class="comment comment-three">
+                    Informação sobre entrega grátis
+                  </div>
+
                   <img src="../assets/trouble-product.png" alt="" />
-                  <div class="comment comment--bottom comment-four">Informação de devolução e entrega nas páginas</div>
+                  <div class="comment comment--bottom comment-four">
+                    Informação de devolução e entrega nas páginas
+                  </div>
                 </div>
               </div>
               <img
                 src="../assets/trouble_wireframe_movie.gif"
                 class="wireframe__mobile__gif"
-              />
+              /> -->
               <!-- Second Item -->
-              <h5>Wireframe</h5>
+              <h5>Protótipo de Alta Fidelidade</h5>
+              <p class="detail__subtitle">
+                Com tudo definido, o protótipo de alta fidelidade foi criado.
+              </p>
+              <div class="final__wireframe">
+                <img src="../assets/trouble/trouble-final-shop.png" alt="" />
+                <img src="../assets/trouble/trouble-final-bottoms.png" alt="" />
+                <img src="../assets/trouble/trouble-final-product.png" alt="" />
+              </div>
+              <img
+                src="../assets/trouble/trouble-final-gif.gif"
+                class="wireframe__mobile__gif"
+              />
             </div>
           </div>
-          <!-- End of Second Step -->
+          <!-- End of Third Step -->
         </div>
+        <div class="footer">
+          <h1>Obrigada!</h1>
+          <div class="footer__links">
+            <a href="../index.html#home">home</a>
+            <a href="../index.html#trouble">voltar</a>
+            <a href="../index.html#curriculo">currículo</a>
+            <a href="../index.html#contato">contato</a>
+          </div>
+        </div>
+
         <!-- End of Detail Content -->
       </div>
     </div>
+    <script src="./scripts/detail.js"></script>
   </body>
 </html>
